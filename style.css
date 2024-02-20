@@ -202,7 +202,6 @@ a{
     align-items: center;
     justify-content: center;
     padding: 50px 20px;
-    gap: 30px;
 }
 .left-b>img{ 
     width: 500px;
@@ -217,6 +216,7 @@ a{
     height: 543px;
     width: 100%;
     padding: 30px;
+    margin-right: 20px;
 }
 .left-b{ 
     width: 100%;
@@ -231,6 +231,13 @@ a{
     border-radius: 20px;
     text-align: center;
 }
+.experience>img{ 
+    width: 4.9rem;
+}
+.education>img{ 
+    width: 5rem;
+}
+
 
 .education{ 
     border: solid black 1px;
@@ -247,10 +254,10 @@ a{
 
 }
 .paragraph-under{ 
-    margin-top: 20px;
+    padding: 20px 0;
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1100px){
     #section-b{ 
         display: flex;
         align-items: center;
@@ -352,6 +359,31 @@ a{
  .middle-content{ 
     gap: 50px;
  }
+@media only screen and (max-width: 1200px){
+    .frontend-development-left, .frontend-development-right{ 
+        border: solid black 1px;
+        border-radius: 20px;
+        padding: 30px 80px;
+    }
+    .grid-items{
+        font-size: 1rem;
+    }
+    .frontend-development-left:hover{
+        border: solid rgb(255, 255, 255) 1px;
+        border-radius: 20px;
+        padding: 29px 90px;
+        background-color: #000000;
+        color: white;
+    }
+    
+    .frontend-development-right:hover{
+        border: solid rgb(255, 255, 255) 1px;
+        border-radius: 20px;
+        padding: 29px 90px;
+        background-color: #000000;
+        color: white;
+    }
+}
 
 @media only screen and (max-width: 1000px){ 
     .middle-content{ 
@@ -367,12 +399,12 @@ a{
     .frontend-development-left, .frontend-development-right{ 
         border: solid black 1px;
         border-radius: 20px;
-        padding: 10px 30px;
+        padding: 2rem 4rem;
     }
     .frontend-development-left:hover{
         border: solid rgb(255, 255, 255) 1px;
         border-radius: 20px;
-        padding: 25px 60px;
+        padding: 3rem 5rem;
         background-color: #000000;
         color: white;
     }
@@ -380,7 +412,7 @@ a{
     .frontend-development-right:hover{
         border: solid rgb(255, 255, 255) 1px;
         border-radius: 20px;
-        padding: 25px 60px;
+        padding: 3rem 5rem;
         background-color: #000000;
         color: white;
     }
@@ -476,7 +508,7 @@ a{
     gap: 10px;
     margin-top: 10px;
 }
-#scroll-buttons{ 
+#scroll-buttons-1 ,#scroll-buttons-2{ 
     padding: 10px;
     border-radius: 30px;
     border: none;
@@ -494,9 +526,6 @@ a{
         border-radius: 20px;
         justify-content: center;
         align-items: center;
-    }
-    .box-1 , .box-3{ 
-        display: none;
     }
     #box-1-img{ 
         width: 200px;
@@ -564,7 +593,81 @@ a{
     .middle-project-content {
         gap: 15px;
     } 
+    
 }
+@media only screen and (max-width: 800px){
+    .box-1,.box-2,.box-3{ 
+        border: solid black 1px;
+        padding: 25px 17px 25px 17px;
+        border-radius: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    #box-1-img{ 
+        width: 200px;
+        height: 250px;
+        border-radius: 15px;
+        object-fit:cover;
+    }
+    #b2:hover{ 
+        background-color: #ffffff;
+        color:rgb(0, 0, 0);
+        border: solid black 1px;
+        cursor: pointer;
+    }
+    #b2{ 
+        border-radius: 20px;
+        color:rgb(255, 255, 255);
+        background-color: #000000;
+        padding: 10px 17px;
+        cursor: pointer;
+        transition: smooth;
+        transition: 1s;
+        font-size: 12px;
+    }
+    #b1:hover{ 
+        color:rgb(255, 255, 255);
+        background-color: #000000;
+        padding: 15px 22px;
+        cursor: pointer;
+        transition: smooth;
+        transition: 1s;
+    }
+    #b1{ 
+        border: solid 1px rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        font-family: "Poppins";
+        border-radius: 20px;
+        padding: 10px 17px;
+    }
+    .box-1>h3{ 
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #696969;
+        padding-top: 5px;
+        font-size: 12px;
+    }
+    .middle-project-content>.box-1>h2{ 
+        font-size: 20px;
+        margin: 5px 15px 0 0;
+        text-align: center;
+    }
+    .middle-project-content>.box-2>h2{ 
+        font-size: 20px;
+        margin: 5px 15px 0 0;
+        text-align: center;
+    }
+    .middle-project-content>.box-3>h2{ 
+        font-size: 20px;
+        margin: 5px 15px 0 0;
+        text-align: center;
+    }
+    .box-1>h3{ 
+        display: none;
+    }
+}
+
 #section-e{ 
     margin-top: 100px;
     padding-top: 200px;
@@ -584,8 +687,8 @@ a{
     margin-bottom: 30px; 
     font-size: 2.5rem;
 }
-.social-logos>img{
-    height: 70px; 
+.social-logos>a{
+    height: 10px; 
     margin-right: 20px;
 }
 .right-footer{ 
