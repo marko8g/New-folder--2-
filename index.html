@@ -14,21 +14,20 @@
                 <img id="logo-img" src="stock-pictures/depositphotos_77856480-stock-illustration-letter-m-logo.jpg" alt="m-logo">
                 <a href="">Mark Carrera</a>
             </div>
-            
-            
             <div class="hamburger">
                 <div class="line"></div>
                 <div class="line"></div>
                 <div class="line"></div>
-                <div class="line"></div> 
             </div>
-
-            <nav>
-                <a href="#b-title">About</a>
-                <a href="#section-c">Experience</a>
-                <a href="#section-d">Projects</a>
-                <a href="#section-e">Contact</a>      
-            </nav>
+            <div class="off-screen-menu">
+                <nav>
+                    <a href="#b-title">About</a>
+                    <a href="#section-c">Experience</a>
+                    <a href="#section-d">Projects</a>
+                    <a href="#section-e">Contact</a>      
+                </nav>
+            </div>
+            
     </header>
 
     <section class="section-a">
@@ -43,7 +42,7 @@
             <h2>Programmer</h2>
 
             <div class="buttons">
-                <button id="click-me">FreeLancing</button>
+                <button id="click-me">PDF Download</button>
                 <button id="contact-info">Contact Info</button>
             </div>
 
@@ -51,7 +50,7 @@
         
     </section>
 
-    <div id="b-title" class="about-me-title">
+    <div id="#b-title" class="about-me-title">
         <h3>hey this is,</h3>
         <h2>About Me</h2>
     </div>
@@ -75,7 +74,7 @@
                         <img src="stock-pictures/4729436.png" alt="">
                         <h2>Education</h2>
                         <p>associate's degree</p>
-                        <p>@ Uni CS or SE Major</p>
+                        <p>CS or SE Major</p>
                     </div>
             </div>
                 <div class="paragraph-under">
@@ -114,7 +113,7 @@
                 </div>
             </div>
             <div class="frontend-development-right">
-                <h2>Future Full Stack Mastery</h2>
+                <h2>Future Full Stack</h2>
                 <div class="grid-items">
                     <div class="grid-item"><img src="stock-pictures/C++_logo.png" alt=""></div>
                     <div class="grid-item"><img src="stock-pictures/python-5-logo-png-transparent.png" alt=""></div>
@@ -155,7 +154,7 @@
 
             <div class="box-3">
                 <img id="box-1-img" src="stock-pictures/pexels-photo-7675398.jpeg" alt="">
-                <h2>Project Third</h2>
+                <h2>Project Three</h2>
                 <div class="buttons-under-imgs">
                     <button id="b1">GitHub</button>
                     <button id="b2">Live Demo</button>
@@ -182,14 +181,16 @@
         </div>
         <div class="right-footer">
             <h2 id="contact-me">Contact Me</h2>
-            <input type="email" id="full-name" placeholder="Full Name" name="">
-            <input type="email"  id="subject" placeholder="Subject" name="" >
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="text" id="full-name" placeholder="Full Name" name="Name"  required>
+                <input type="hidden" name="access_key" value="c6b6bdf0-2a31-44c9-85fa-a7198d025a1f">
+                <input type="email" id="email" placeholder="Email" name="Email" required>
             <div class="bottom-email-section">
-                <input type="email" id="email" placeholder="Email" name="" >
-                <textarea name="" placeholder="Message" id="message" cols="3" rows="1"></textarea>
-                <button id="submit-button">Submit</button>
+                <input type="text"  id="subject" placeholder="Subject" name="subject" required>
+                <textarea name="" placeholder="Message" id="message" required></textarea>
+                <button type="submit" class="submit-button">Submit</button>
             </div>
-            
+            </form>
         </div>
 
 
