@@ -1,12 +1,3 @@
-// const hamburger = document.querySelector(".hamburger")
-// hamburger.onclick = function() {
-//     let navbar = document.getElementsByTagName("nav")[0]
-//      navbar.classList.toggle("active")
-// } 
-// const scroll = document.querySelector("#scroll-buttons")
-// onclick.scroll
-
-
 
 const hamMenu = document.querySelector('.hamburger');
 // variables for hambuger and off-screen-menu so we can target them later   
@@ -28,3 +19,8 @@ document.body.addEventListener('click', function(event) {
         offScreenMenu.classList.remove('active');
     }
 });
+
+const downloadBtn = document.getElementById("click-me")
+downloadBtn.addEventListener("click", () => { 
+    print();
+})
